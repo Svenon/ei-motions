@@ -1,0 +1,27 @@
+html {
+    font-size: 22px
+}
+body {
+    background-color: #333;
+    color: whitesmoke;
+    text-align: center;
+}
+a {
+    color: aliceblue;
+}
+a:visited {
+    color: lightgray;
+}
+a:hover, a:active {
+    color: #eee;
+}
+#lottieDiv {
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    text-align: center;
+    opacity: 1;
+}
