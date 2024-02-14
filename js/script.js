@@ -8,6 +8,10 @@ var anim;
 anim = lottie.loadAnimation(params);
 
 onmousemove = function (e) {
-    console.log("mouse location:", 100/widthHeight.offsetWidth*e.clientX, "%", e.clientY);
-    lottie.goToAndStop(181 * (1 / widthHeight.offsetWidth * e.clientX), true, "Demo Animation");
+    var mouseW = 1 / widthHeight.offsetWidth * e.clientX;
+    //console.log("mouse location:", 100/widthHeight.offsetWidth*e.clientX, "%", e.clientY);
+    if(mouseW > 1){
+        mouseW = 1;
+    }
+    lottie.goToAndStop(181 * mouseW, true, "Demo Animation");
 }
