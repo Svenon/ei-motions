@@ -1,7 +1,7 @@
 console.log(' script work');
 
 const widthHeight = document.getElementById("lottieDiv");
-var animationData = "animations/horizont.json";
+var animationData = "animations/example.json";
 var params = { container: widthHeight, path: animationData, renderer: 'svg', loop: true, autoplay: true, name: "Demo Animation", };
 var anim;
 
