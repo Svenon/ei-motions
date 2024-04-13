@@ -15,7 +15,7 @@ onmousemove = function (e) {
     }
     //console.log("mouse location:", 100*mouseW, "%");
     //console.log("totalFrames", anim.totalFrames);
-    //lottie.goToAndStop((anim.totalFrames-1) * mouseW, true, "Demo Animation");
+    lottie.goToAndStop((anim.totalFrames-1) * mouseW, true, "Demo Animation");
 }
 anim.onEnterFrame = function(e){
     console.log("currentTime: ", e.currentTime);
